@@ -4,7 +4,7 @@ DATADIR="./blockchain"
 if [ ! -d $DATADIR ]; then
   mkdir -p $DATADIR;
 fi
-./keys.conf
+. ./keys.conf
 nodeos \
 --signature-provider $PUBKEY=KEY:$PRIVKEY \
 --plugin eosio::producer_plugin \
