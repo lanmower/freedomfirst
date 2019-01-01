@@ -5,11 +5,11 @@ if [ ! -d $DATADIR ]; then
   mkdir -p $DATADIR;
 fi
 
-./keys.conf
-
+. ./keys.conf 
+echo $PUBKEY $PRIVKEY
 nodeos \
 --genesis-json $DATADIR"/../../genesis.json" \
---signature-provider $PRIVKEY=KEY:$PUBKEY \
+--signature-provider $PUBKEY=KEY:$PRIVKEY \
 --plugin eosio::producer_plugin \
 --plugin eosio::chain_api_plugin \
 --plugin eosio::http_plugin \
