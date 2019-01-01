@@ -7,7 +7,7 @@ if [ ! -d $DATADIR ]; then
 fi
 
 nodeos \
---genesis-json $DATADIR"/../../genesis.json" \
+--genesis-json $DATADIR"/../genesis.json" \
 --signature-provider $PUBKEY=KEY:$PRIVKEY \
 --plugin eosio::producer_plugin \
 --plugin eosio::chain_api_plugin \
