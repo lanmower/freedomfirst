@@ -6,7 +6,6 @@ if [ ! -d $DATADIR ]; then
 fi
 
 . ./keys.conf 
-echo $PUBKEY $PRIVKEY
 nodeos \
 --genesis-json $DATADIR"/../../genesis.json" \
 --signature-provider $PUBKEY=KEY:$PRIVKEY \
