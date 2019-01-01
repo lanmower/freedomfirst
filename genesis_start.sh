@@ -17,7 +17,7 @@ nodeos \
 --blocks-dir $DATADIR"/blocks" \
 --config-dir $DATADIR"/config" \
 --producer-name $CURDIRNAME \
---http-server-address 0.0.0.0:8010 \
+--http-server-address 0.0.0.0:8888 \
 --p2p-listen-endpoint 0.0.0.0:9010 \
 --access-control-allow-origin=* \
 --contracts-console \
