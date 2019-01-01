@@ -5,7 +5,7 @@ CURDIRNAME=${PWD##*/}
 if [ ! -d $DATADIR ]; then
   mkdir -p $DATADIR;
 fi
-
+. ./keys.conf
 nodeos \
 --genesis-json $DATADIR"/../genesis.json" \
 --signature-provider $PUBKEY=KEY:$PRIVKEY \
