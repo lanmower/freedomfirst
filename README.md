@@ -2,6 +2,7 @@ a full eosio network for the freedom-first comminuty
 before using the launch scripts, you need to set up a keys.conf file, make it executable, and fill it with the following
 
 NAME=blockproducername
+
 PRIVKEY=5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX #your privkey here
 PUBKEY=EOS8XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX #your pubkey here
 
