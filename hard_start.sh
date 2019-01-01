@@ -14,9 +14,9 @@ nodeos \
 --data-dir $DATADIR"/data" \
 --blocks-dir $DATADIR"/blocks" \
 --config-dir $DATADIR"/config" \
---producer-name eosio \
---http-server-address 127.0.0.1:8888 \
---p2p-listen-endpoint 127.0.0.1:9010 \
+--producer-name $CURDIRNAME \
+--http-server-address 0.0.0.0:8888 \
+--p2p-listen-endpoint 0.0.0.0:9010 \
 --access-control-allow-origin=* \
 --contracts-console \
 --http-validate-host=false \
