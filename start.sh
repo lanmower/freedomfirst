@@ -6,6 +6,8 @@ if [ ! -d $DATADIR ]; then
 fi
 
 . ./keys.conf 
+
+echo $NAME
 nodeos \
 --signature-provider $PUBKEY=KEY:$PRIVKEY \
 --plugin eosio::producer_plugin \
