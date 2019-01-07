@@ -14,8 +14,8 @@ cleos  create account eosio eosio.vpay EOS84BLRbGbFahNJEpnnJHYCoW9QPbQEk2iHsHGGS
 
 cleos set contract eosio.token build/eosio.token/
 cleos set contract eosio.msig build/eosio.msig/
-cleos push action eosio.token create '[ "eosio","1600000010.0000 SYS" ]' -p eosio.token@active
-cleos push action eosio.token issue '[ "eosio", "1600000010.0000 SYS", "memo" ]' -p eosio@active
+cleos push action eosio.token create '[ "eosio","2000010000.0000 SYS" ]' -p eosio.token@active
+cleos push action eosio.token issue '[ "eosio", "2000010000.0000 SYS", "memo" ]' -p eosio@active
 cleos set contract eosio build/eosio.system/
 cleos set contract eosio build/eosio.system/
 cleos push action eosio setpriv '["eosio.msig", 1]' -p eosio@active
@@ -32,7 +32,7 @@ cleos system newaccount eosio --transfer wulfen EOS7G7VKGn3gz7f7yyV9BRe9R2QwxBSn
 cleos system newaccount eosio --transfer stephanus EOS65uuxsziXabtoVfU8EY8ZGqfeY4NEGshjBK45PbChw2J4Gydzp --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
 cleos system newaccount eosio --transfer evo EOS5ap3iQbJY89hGi75tJTa2fh6iv3J2wTk5UkeHyTrJRTucBKy9e --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
 cleos system newaccount eosio --transfer koh EOS5K7EkWPhgETBkPtJ3KFB1P1HBb2yseGiYCQQzmFcT9Y8vQRURD --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
-cleos system newaccount eosio --transfer kaulukia EOS6yLUcUzV3pVxs5F1uQGKTPKmGBmJNfpeVt5HktvcQdZpQUUExG --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
+cleos system newaccount eosio --transfer kaulukia EOS6xf4Z8CuAEz82iZGYHvPNiQmVqZJwBaQaZaH6sqtTypDus4M51 --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
 cleos system newaccount eosio --transfer occultcorner EOS6yLUcUzV3pVxs5F1uQGKTPKmGBmJNfpeVt5HktvcQdZpQUUExG --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
 cleos system newaccount eosio --transfer assimilation EOS71T5ZqdhoDQ7uGcJ1t5vg78pVXYGU1xpRy9GqimpqkJ8aujKXr --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
 cleos system newaccount eosio --transfer supermeatboy EOS6AjN55SaQwtLZUmTN7NU6Gp98WhRMwLNaFkxcchQ87mF1Bio6U --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
@@ -40,15 +40,19 @@ cleos system newaccount eosio --transfer diezeldiddy EOS54unGwsB812kukffX6Vpkyn8
 cleos system newaccount eosio --transfer jaguarpaw EOS8UA8vj3tEaBA892xo2yHhR54q24B82i6r3e4iNbgzg9F4GuxFz --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
 cleos system newaccount eosio --transfer phil EOS7UnjhXYfUnTTrpcFP9GhMF7ubcd2sSJqBNSCBii9otguUK8zTJ --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
 cleos system newaccount eosio --transfer markegiles EOS7QJ8TCWxiD93RSnbge7h1GxL1uziU8np7YCsaAGP51i2yeaNqn --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
+cleos system newaccount eosio --transfer braaiboy EOS7gXGHLSqRWYecxMBstENQQaHgPr3dxDCpDhhkttRonuC4MLPgf --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
+cleos system newaccount eosio --transfer leepateman EOS7BECyXpgjXeLaFH6LrsKmZMQApy8TDJPC7B3tU6eHfgor8z69q --stake-net "50000000.0000 SYS" --stake-cpu "50000000.0000 SYS" --buy-ram-kbytes 8192
+
+
 
 # REG PRODUCERS
 cleos system regproducer moonshine EOS84tXCUNRVAjFBZCXFjfopKgNpk4jNNZnxwqCxssVbCC11NTZrq
 cleos system regproducer occultcorner EOS6xf4Z8CuAEz82iZGYHvPNiQmVqZJwBaQaZaH6sqtTypDus4M51 
 cleos system regproducer koh EOS5K7EkWPhgETBkPtJ3KFB1P1HBb2yseGiYCQQzmFcT9Y8vQRURD 
 
-cleos system voteproducer prods moonshine moonshine occultcorner koh evo
-cleos system voteproducer prods occultcorner moonshine occultcorner koh evo
-cleos system voteproducer prods koh moonshine occultcorner koh evo
+cleos system voteproducer prods moonshine moonshine koh phil supermeatboy
+cleos system voteproducer prods occultcorner moonshine koh occultcorner phil supermeatboy
+cleos system voteproducer prods koh moonshine koh phil supermeatboy
 
 # RESIGN
 
