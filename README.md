@@ -70,7 +70,7 @@ Instant Messaging/File transfer/Audio/Video chat
 #### homepage
 https://www.dconnect.live/
 
-#### mainnet discussion on discord
+#### discussion on discord
 https://discord.gg/qG2e8mg
 
 References
