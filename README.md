@@ -65,13 +65,10 @@ Messaging
 Instant Messaging/File transfer/Audio/Video chat
 
 ## **FreedomFirst**
-##ॐweareone 
+## ॐweareone 
 
-#### sign up for an account
-https://registration.dconnect.live/
-
-#### Vote for witnesses/block producers, and register as a block producer
-https://voter.dconnect.live/
+#### homepage
+https://www.dconnect.live/
 
 #### mainnet discussion on discord
 https://discord.gg/qG2e8mg
