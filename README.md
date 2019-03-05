@@ -68,6 +68,10 @@ in the directory of the project, run ./configure.sh
 specify your account details as it asks for it
 
 when complete, run ./genesis_start.sh
-leave it running for a minute or so, then run ./stop.sh, wait for it to end and then ./start.sh
+leave it running for a minute or so, then run ./stop.sh, wait for it to end.
+
+# STEP 4: start
+run
+./start.sh
 
 Your node should now be ready for action!
