@@ -26,5 +26,7 @@ nodeos \
 --verbose-http-errors \
 --enable-stale-production \
 --p2p-peer-address 54.39.23.130:9010 \
+--p2p-peer-address 192.99.154.55:9010 \
+--p2p-peer-address 51.38.70.208:9010 \
 >> $DATADIR"/nodeos.log" 2>&1 & \
 echo $! > $DATADIR"/eosd.pid"
