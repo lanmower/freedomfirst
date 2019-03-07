@@ -30,3 +30,5 @@ nodeos \
 --p2p-peer-address 51.38.70.208:9010 \
 >> $DATADIR"/nodeos.log" 2>&1 & \
 echo $! > $DATADIR"/eosd.pid"
+echo "Press cntrl-c to stop watching the log, you can view it later with tail -f blockchain/nodeos.log"
+tail -f $DATADIR"/nodeos.log"
