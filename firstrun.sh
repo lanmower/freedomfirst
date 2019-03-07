@@ -1,1 +1,2 @@
-./genesis_start.sh & sleep 60 && ./stop.sh && ./start.sh
+./configure.sh
+./genesis_start.sh 
