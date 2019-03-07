@@ -24,6 +24,6 @@ nodeos \
 --http-validate-host=false \
 --verbose-http-errors \
 --enable-stale-production \
---p2p-peer-address 192.99.154.55:9010 \
+--p2p-peer-address gostomp.co.za:9010 \
 >> $DATADIR"/nodeos.log" 2>&1 & \
 echo $! > $DATADIR"/eosd.pid"
