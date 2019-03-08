@@ -57,7 +57,7 @@ EOSIO currently supports the following operating systems:
 
 # STEP 2: install freedomfirst scripts
 
-git clone https://github.com/lanmower/FreedomFirst-bp.git
+git clone https://github.com/lanmower/freedomfirst.git
 
 # STEP 3: configure
 
