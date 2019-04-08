@@ -24,13 +24,9 @@ nodeos \
 --http-validate-host=false \
 --verbose-http-errors \
 --enable-stale-production \
-<<<<<<< HEAD
---p2p-peer-address gostomp.co.za:9010 \
-=======
 --max-transaction-time 50 \
 --p2p-peer-address 54.39.23.130:9010 \
 --p2p-peer-address 192.99.154.55:9010 \
 --p2p-peer-address 51.38.70.208:9010 \
->>>>>>> 6c56ae27975bfca3ec8210fd1544c0f17f2094b3
 >> $DATADIR"/nodeos.log" 2>&1 & \
 echo $! > $DATADIR"/eosd.pid"
