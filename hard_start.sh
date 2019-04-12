@@ -30,6 +30,7 @@ nodeos \
 --p2p-peer-address 192.99.154.55:9010 \
 --p2p-peer-address 51.38.70.208:9010 \
 --hard-replay \
+--chain-state-db-size-mb 2048 \
 >> $DATADIR"/nodeos.log" 2>&1 & \
 echo $! > $DATADIR"/eosd.pid"
 echo "Press cntrl-c to stop watching the log, you can view it later with tail -f blockchain/nodeos.log"
