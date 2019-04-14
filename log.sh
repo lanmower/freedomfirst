@@ -1,1 +1,1 @@
-tail -f ./blockchain/nodeos.log
+tail -f ./blockchain/nodeos.log -n 150
