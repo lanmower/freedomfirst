@@ -25,9 +25,9 @@ nodeos \
 --verbose-http-errors \
 --enable-stale-production \
 --max-transaction-time 50 \
---chain-state-db-size-mb 4096 \
 --p2p-peer-address 54.39.23.130:9010 \
 --p2p-peer-address 192.99.154.55:9010 \
 --p2p-peer-address 51.38.70.208:9010 \
+--chain-state-db-size-mb 4096 \
 >> $DATADIR"/nodeos.log" 2>&1 & \
 echo $! > $DATADIR"/eosd.pid"
